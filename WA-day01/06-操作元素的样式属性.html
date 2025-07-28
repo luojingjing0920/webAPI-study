@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">123</div>
+    <script>
+        //将盒子的属性修改颜色为Pink色
+        //1、先获取元素
+        const box = document.querySelector('.box')
+        //2、修改元素属性
+        box.style.width = '500px' //大部分数字后面都需要加单位
+        box.style.backgroundColor = 'pink'
+        box.style.paddingLeft = '300px' //类似于"padding-left"这样有连字符的属性时,就采用小驼峰的写法。
+
+    </script>
+</body>
+</html>

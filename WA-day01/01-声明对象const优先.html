@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const arr = ['red', 'blue']
+        arr.push('pink')  //正确的
+        arr = [1, 2, 3]  //错误的，这里就相当于将数组的对象改变了，就不可以用const，只是在数组中添加删除操作就不会有错
+        //但是完全将其中的对象改变就是错误的。
+        
+    </script>
+</body>
+</html>

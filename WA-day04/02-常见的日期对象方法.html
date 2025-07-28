@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 400px;
+            height: 50px;
+            border: 1px solid pink;
+            text-align: center;
+            line-height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <script>
+        //获得日期对象
+        // const date = new Date()
+        //使用里面的方法
+        // console.log(date.getFullYear())
+        // console.log(date.getMonth() + 1)
+        // console.log(date.getDate())
+        // console.log(date.getDay())
+
+/*
+//需求：将当前时间以：YYYY-MM-DD HH:mm 形式显示在页面    2008-08-08 08:08
+        // function getTime() {
+        //     const date = new Date()
+        //     let yyyy = date.getFullYear()
+        //     let mm1 = date.getMonth() + 1
+        //     mm1 = mm1 < 10 ? '0' + mm1 : mm1
+        //     let dd = date.getDate()
+        //     dd = dd < 10 ? '0' + dd : dd
+        //     let hh = date.getHours()
+        //     hh = hh < 10 ? '0' + hh : hh
+        //     let mm2 = date.getMinutes()
+        //     mm2 = mm2 < 10 ? '0' + mm2 : mm2
+        //     let ss = date.getSeconds()
+        //     ss = ss < 10 ? '0' + ss : ss
+        //     return `今天是${yyyy}-${mm1}-${dd} ${hh}:${mm2}:${ss}`
+        // }
+        // const div = document.querySelector('div')
+        // div.innerHTML = getTime()
+        
+        // //时间动起来
+        // setInterval(function () {
+        //     div.innerHTML = getTime()
+        // }, 100)
+ */       
+
+ //时间的另外一个写法
+        const div = document.querySelector('div')
+        const date = new Date()
+        // div.innerHTML = date.toLocaleDateString() //2025/7/18
+        // div.innerHTML = date.toLocaleString() //2025/7/18 00:49:21
+        div.innerHTML = date.toLocaleTimeString() //00:51:31
+        
+    </script>
+</body>
+</html>

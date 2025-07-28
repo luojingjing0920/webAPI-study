@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+        }
+        #nav {
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="box">123</div>
+    <div class="box">abc</div> -->
+    <!-- 练习 -->
+    <!-- <p id="nav">导航栏</p> -->
+    <!-- 练习：获取第一个li -->
+    <!-- <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul> -->
+
+    <!-- 练习：请控制台依次输出3个li的DOM对象 -->
+     <ul class="nav">
+        <li>我的首页</li>
+        <li>产品介绍</li>
+        <li>联系方式</li>
+     </ul>
+
+
+    <script>
+        // //1、获取匹配的第一个元素  document.querySelector('css选择器')
+        // // const box = document.querySelector('div')
+        // const box = document.querySelector('.box')
+        // console.dir(box)
+
+        //练习p  dom对象
+        // const nav = document.querySelector('#nav')
+        // console.dir(nav)
+        // nav.style.color = 'red' //可以在直接修改其属性
+
+        //练习：获取第一个li
+        // const li = document.querySelector('ul li:first-child')
+        // console.dir(li)
+
+        //2、选择匹配的多个元素 document.querySelectorAll('css选择器')
+        //选择所有的li
+        // const li = document.querySelectorAll('ul li')
+        // console.dir(li)
+        
+
+
+        // 练习：请控制台依次输出3个li的DOM对象
+        //1、获取元素
+        const lis = document.querySelectorAll('.nav li')
+        // console.dir(li)
+        for(let i = 0; i < lis.length; i++){
+            console.dir(lis[i])
+        }
+
+        //其余获取DOM元素的方法
+        //document.getElementById('nav') 根据id获取第一个元素
+        //documnet.getElementsByTagName('div')  根据标签获取一类元素，获取页面所有的div
+        //document.getElementByClassName('w')  根据类名获取元素，获取页面所有类名为w的元素
+
+    </script>
+</body>
+</html>
